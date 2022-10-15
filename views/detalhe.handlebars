@@ -1,0 +1,24 @@
+<div id="container-vaga" class="container">
+    <div class="row text-center" href="/">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Detalhes sobre a vaga</li>
+            </ol>
+        </nav>
+        <div id="principal">
+            <div class="col-md-12" id="img-container">
+                <img src="/imgs/svgMala.svg" alt="empresa">
+            </div>
+            <div class="col-md-12">
+                <h1 class="main-color">{{vaga.dataValues.titulo}}</h1>
+                <p class="bold">Qual perfil estão procurando</p>
+                <p id="vaga-desc">{{vaga.dataValues.descricao}}</p>
+                <p><span class="bold main-color">Salario informado: R$ {{vaga.dataValues.salario}}</span></p>
+                <p>Para trabalhar com a(o) <span class="bold main-color">{{vaga.dataValues.empresa}}</span> envie seu
+                    curriculo para <span class="bold main-color"><a
+                            href="mail:to{{vaga.dataValues.email}}">{{vaga.dataValues.email}}</a></span></p>
+            </div>
+        </div>
+    </div>
+</div>

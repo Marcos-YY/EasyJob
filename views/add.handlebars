@@ -1,0 +1,47 @@
+<div id="imagem" class="img-fluid">
+    </body>
+    <div id="formulario" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Divulgue sua vaga preenchendo todos os campos</h1>
+            </div>
+            <div id="caixa-formulario" class="col-md-12">
+                <h2 class="text-center">Preencha da forma mais clara para o interessado</h2>
+                <form action="/vagaR/add" method="post">
+                    <div class="form-group">
+                        <label for="titulo-cadastro text-center">Título da vaga</label>
+                        <input type="text" class="form-control" id="titulo-cadastro" name="titulo"
+                            placeholder="Digite o título da vaga" required>
+                        <small id="dica" class="form-text text-muted">Cargo a desempenhar</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="descricao-cadastro">Descrição da vaga</label>
+                        <textarea type="text" class="form-control" id="descricao-cadastro" name="descricao"
+                            placeholder="Digite as atividades a serem exercidas" required></textarea>
+                        <small id="dica" class="form-text text-muted">Seja objetivo</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Salario da vaga</label>
+                        <input type="text" class="form-control" id="salario-cadastro" name="salario"
+                            placeholder="Digite o salário vaga" required>
+                        <small id="dica" class="form-text text-muted">Quanto pretende pagar?</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Empresa</label>
+                        <input type="text" class="form-control" id="empresa-cadastro" name="empresa"
+                            placeholder="Digite quem está contratando" required>
+                        <small id="dica" class="form-text text-muted">Empresa ou pessoa reponsável</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-cadastro">Email para contato e envio de CV</label>
+                        <input type="email" class="form-control" id="email-cadastro" name="email"
+                            placeholder="Digite o email" required>
+                        <small id="dica" class="form-text text-muted">Este será o canal de comunicação</small>
+                    </div>
+                    <input type="hidden" name="vaga_nova" value="1">
+                    <!--definir como vaga nova ao finalizar -->
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,44 @@
+<div id="primeiro-container" class="container-fluid">
+    <h1 id="titulo" class="text-center">Encontre a vaga perfeita pra você!</h1>
+    <p id="subtitulo" class="text-center">Nunca foi tão fácil encontrar um emprego!</p>
+    <form id="busca" action="" class="form-inline">
+        <div class="form-group col-md-10">
+            <input type="text" class="form-control" id="busca" name="busca"
+                placeholder="qual tipo de vaga está procurando?">
+
+            <div class="col-md-2">
+                <button type="submit" class="btn">Procurar<img id="lupa" src="/imgs/lupa1.svg" alt=""></button>
+            </div>
+        </div>
+    </form>
+
+</div>
+<main>
+    <div id="lista-container" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                {{#if busca}}
+                <!--se tiver busca-->
+                <h2 id="titulo-lista" class="text-center">Exibindo resultados com : {{busca}}</h2>
+                {{else}}
+                <!--exibe o conteudo padrao-->
+                <h2 id="titulo-lista" class="text-center">Aqui vão algumas vagas em destaque <img id="img-destaque"
+                        src="/imgs/destaque1.svg" alt=""></h2>
+                {{/if}}
+                <ul id="lista" class="list-group">
+                    {{#each vagas}}
+                    <li class="list-group-item {{#if dataValues.vaga_nova}}new-job{{/if}}">
+                        <img src="/imgs/svgMala.svg" alt="empresa">
+                        <p>{{dataValues.empresa}}</p>
+                        <h2>{{dataValues.titulo}}</h2>
+                        <p>R$ {{dataValues.salario}} </p>
+                        <span class="new-job-label">nova!</span>
+                        <a id="botao-vervaga" class="btn btn-primary" href="/vagaR/detalhe/{{dataValues.id}}">Ver
+                            vaga</a>
+                    </li>
+                    {{/each }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>

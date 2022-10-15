@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+/*menu*/
+
+.navbar {
+    padding: 1rem;
+    border-bottom: 1px solid lightgrey;
+}
+
+.navbar .nav-item a {
+    color: dimgray;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    /*links*/
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+.navbar .nav-item .btn {
+    /*botao de cadastrar vaga*/
+    color: aliceblue;
+    background-color: mediumblue;
+    border: 2px solid transparent;
+    border-radius: 15px;
+}
+
+.nav-link.btn.btn-primary:hover,
+#busca button:hover,
+.list-group-item a:hover,
+#caixa-formulario button:hover {
+
+    background-color: white;
+    color: mediumblue;
+    border-color: mediumblue;
+}
+
+/*banner*/
+#primeiro-container {
+    padding: 110px;
+    background-color: beige;
+    border-bottom: 4px solid white;
+    margin-bottom: 30px;
+    background-image: url("../imgs/banner2.jpg");
+    background-position: 0 100px;
+    background-size: cover;
+    color: white;
+}
+
+#titulo {
+    padding: 30px 0;
+    font-size: 3rem;
+}
+
+#subtitulo {
+    font-size: 1rem;
+    padding-bottom: 80px;
+}
+
+/*barra de pesquisa*/
+#busca {
+    padding: 30px 100px;
+}
+
+#busca .col-md-10,
+#busca .col-md-2 {
+    padding: 0;
+}
+
+#busca input,
+#busca button {
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+    font-size: 1rem;
+}
+
+#lupa {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+#busca button {
+    color: aliceblue;
+    background-color: mediumblue;
+    border: 2px solid transparent;
+}
+
+#img-destaque {
+    width: 50px;
+    height: 50px;
+}
+
+/*lista*/
+#lista-container {
+    padding: 0 100px;
+}
+
+#lista .list-group-item {
+    margin-bottom: 8px;
+    border: 1px solid lightseagreen;
+    border-radius: 10px;
+    padding: 15px 80px;
+    height: 150px;
+}
+
+#lista .list-group-item p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#lista .list-group-item.new-job {
+    background-color: lightcyan;
+}
+
+#titulo-lista {
+    margin-bottom: 40px;
+}
+
+.list-group-item img {
+    /*centralizar na borda esquerda*/
+    width: 70px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 40%;
+    position: absolute;
+    left: -40px;
+    top: calc(50% - 40px);
+    background-color: rgb(119, 178, 238);
+}
+
+.list-group-item a {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    height: 50px;
+    line-height: 35px;
+    background-color: rgb(119, 178, 238);
+    font-weight: bold;
+}
+
+.new-job-label {
+    background-color: goldenrod;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 10px;
+    position: absolute;
+    right: 150px;
+    top: 40px;
+    border-radius: 5px;
+    display: none;
+    /*nao ira aparece em todos os casos*/
+}
+
+.new-job .new-job-label {
+    /*quando possuir essa classe ira mostrar o span*/
+    display: block;
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#lista .list-group-item:last-child {
+    margin-bottom: 150px;
+}
+
+/*Página de cadastro ---------------------------------------------------*/
+#formulario {
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+#caixa-formulario {
+    padding: 50px;
+    box-shadow: 0 0px 15px mediumblue;
+    border-radius: 20px;
+    margin-top: 50px;
+    background-color: #FFF;
+}
+
+#formulario h1 {
+    box-shadow: 0 0px 15px mediumblue;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 40px;
+}
+
+#formulario h2 {
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+#formulario label {
+    font-weight: bold;
+}
+
+#caixa-formulario input,
+#caixa-formulario textarea {
+    border: 2px solid black;
+}
+
+#caixa-formulario button {
+    height: 50px;
+    width: 300px;
+    background-color: mediumblue;
+    border: 2px solid transparent;
+    margin-left: calc(50% - 165px);
+    margin-top: 30px;
+}
+
+.form-group {
+    margin: 50px;
+}
+
+#imagem {
+    background-image: url(/public/imgs/banner4.jpeg);
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Ver vaga*/
+
+#container-vaga {
+    margin-top: 100px;
+}
+
+#container-vaga h1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#img-container img {
+    width: 70px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 40%;
+    background-color: rgb(119, 178, 238);
+}
+
+#vaga-desc {
+    width: 100%;
+    margin: auto auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.main-color {
+    color: mediumblue;
+}
+
+#principal {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    box-shadow: 0 0px 15px mediumblue;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 40px;
+}
+
+@media (max-width:480px) {
+
+    /*navbar*/
+    #navBarNav {
+        text-align: center;
+    }
+
+    #primeiro-container {
+        padding: 50px;
+        padding-top: 100px;
+    }
+
+    #busca {
+        padding: 0;
+    }
+
+    /*lista de vagas*/
+    #lista-container {
+        padding: 20px;
+    }
+
+    .list-group-item {
+        padding: 15px 60px;
+    }
+
+    .list-group-item h2 {
+        font-size: .7rem;
+        width: 80%;
+        font-weight: bold;
+    }
+
+    .list-group-item img {
+        width: 50px;
+        left: 15px;
+        top: calc(50% -25px);
+    }
+
+    .new-job .new-job-label {
+        display: none;
+    }
+
+    #botao-vervaga a {
+        max-width: 25%;
+    }
+
+    /*pagina de add vaga*/
+
+    #caixa-formulario {
+        padding: 25px;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #caixa-formulario h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        color: mediumblue;
+    }
+
+    #caixa-formulario label {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #caixa-formulario button {
+        width: 107%;
+    }
+
+    #caixa-formulario input,
+    #caixa-formulario textarea,
+    #caixa-formulario label {
+        width: 150%;
+        margin-left: -50px;
+    }
+}
