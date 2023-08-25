@@ -15,10 +15,7 @@ const { engine } = require('express-handlebars');
 app.listen(porta, () => { console.log(`Rodando na porta ${porta}`) })
 
 //conexao com banco
-db
-    .authenticate()
-    .then(() => { console.log('conectado com sucesso') })
-    .catch(err => { console.log('nao conectou', err) });
+db.authenticate()
 
 //passando o body como parametro
 app.use(urlencoded({ extended: false }));
